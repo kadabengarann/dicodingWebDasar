@@ -20,6 +20,33 @@ document.addEventListener("DOMContentLoaded", event => {
         menu_responsive.classList.toggle('active');
         })
       })
+    //   let v = document.querySelectorAll('.menu');
+    //   for (const item of v) {
+    //     item.addEventListener('click', event => {
+                
+    //         item[3].classList.toggle("selected");
+    //     })
+    //   }
+    //   v.classList.add("addCSS");
+    // document.querySelectorAll('.menu').forEach(item => {
+    //     item.addEventListener('click', event => {
+    //         let current = document.querySelector('.selected');
+    //         current.className = current.className.replace(" selected", "");    
+    //         item.this.classList.add("huh");
+    //         console.log();
+    //     })
+    //   })
+      
+    //   var header = document.querySelector('.menu');
+    //   var btns = header.querySelector('.menu');
+    //   for (var i = 0; i < 4; i++) {
+    //     btns[i].addEventListener("click", function() {
+    //     var current = document.getElementsByClassName("active");
+    //     current[0].className = current[0].className.replace(" active", "");
+    //     this.className += " active";
+    //     });
+    //   }
+      
 })
 
 function printGames() {

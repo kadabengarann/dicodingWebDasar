@@ -21,12 +21,13 @@
     url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.ttf") format("truetype"), 
     url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.svg#Suisse Int'l") format("svg"); 
 }
+
 @font-face {font-family: "Suisse Intl Light"; 
 src: url("https://d33wubrfki0l68.cloudfront.net/87565495e16c505216fe3004e633b4b87f3a5c05/0cff4/static/media/suisseintl-light.9be8b893.ttf")
 }
 html {
     scroll-behavior: smooth;
-  }
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -36,7 +37,6 @@ body{
     background-color: #FFFFFF;
     color: var(--text1);
 }
-
 header, main,nav, article, aside, section{
     flex-grow: 1;
     display: flex;
@@ -75,6 +75,9 @@ main{
 a{
     text-decoration: none;
     color: var(--text1);
+}
+a:hover{
+    opacity: 70%;
 }
 
 a.anchor {
@@ -128,9 +131,18 @@ nav ul{
     justify-content: space-between;
 
 }
+.logo  {
+    font-size: 1.4em;
+    color: var(--blue);
+}
 .navi{
     padding: 10px 20px;
     margin-top: 0;
+
+}
+.selected{
+    color: var(--blue);
+    background-color: #666;
 
 }
 .menu_burger{
