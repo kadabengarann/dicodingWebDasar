@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --blueLight: #192ea5;
+    --blue: #00137A;
+    --darkenBlue: #000D69;
+    --buttonColor: #FF396F;
+    --text1: #535461;
+    --text2: #FDFDFD;
+    --bg1: #FAFAFA;
+    --card1: #FAFAFA;
+    --card2: #FFF;
+  }
+@font-face {font-family: "Suisse Int'l"; 
+    src: url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.eot"); 
+    src: url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.svg#Suisse Int'l") format("svg"); 
+}
+@font-face {font-family: "Suisse Intl Light"; 
+src: url("https://d33wubrfki0l68.cloudfront.net/87565495e16c505216fe3004e633b4b87f3a5c05/0cff4/static/media/suisseintl-light.9be8b893.ttf")
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background-color: #FFFFFF;
+    color: var(--text1);
+    /* width: max-content; */
+    /* overflow-x: hidden; */
+
+}
+
+header, main,nav, article, aside, section{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    flex-direction: column;
+    align-items: stretch;
+    /* max-width: 90vw; */
+}
+
+.container{
+    width: 100%;
+    max-width: 1100px;
+    /* min-height: 20vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 0;
+    flex-direction: column;
+}
+.btn{
+    margin-top: 30px;
+    padding: 10px 20px;
+    color: var(--text2);
+    background-color: var(--buttonColor);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: var(--text1);
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 20px;
+}
+ul li{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+nav ul li{
+    margin-left: 2.1875vw;
+    overflow: hidden;
+}
+/* ----------- NAV-------------- */
+nav{
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    font-weight: 400;
+    top: 0;
+    min-height: auto;   
+    background-color: var(--bg1);
+    /* border-bottom: 1px solid ;  */
+    /* box-shadow: 0px 7px 21px -7px rgba(120,120,120,0.75); */
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.nav{
+    font-size: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 0;
+    font-weight: 400;
+    padding: 2.4vw 0;
+
+}
+.nav .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navi{
+    padding: 10px 20px;
+    margin-top: 0;
+
+}
+/* ----------- END NAV-------------- */
+
+/* ----------- Content-------------- */
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--card1);
+    border-radius: 7px;
+    padding: 40px 30px;
+    gap: 25px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: transform .5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px 5px rgb(0 0 0 / 20%);
+}
+.card .cardBody{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+
+}
+.card .cardFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* ----------- Section 1-------------- */
+#section1{
+    background-color: var(--card2);
+    background-image: url(/assets/img/Frame\ 3.svg);
+    background-size: inherit;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+.heading{
+    justify-content: space-between;
+    flex-direction: row;
+    min-height: 100vh;
+    padding: 0;
+}
+.heading .headingText{
+    max-width: 45vw;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+}
+.headline{
+    /* font-size: 4em; */
+    font-family: "Suisse Intl Light", Arial, Helvetica, sans-serif;
+    max-width: 85%;
+    font-weight: 570;
+    font-size: 3em;
+    line-height: 1.4;
+    color: var(--blue);
+}
+.subTittle{
+    margin-top: 30px;
+    font-family: "Suisse Intl Light", Arial, Helvetica, sans-serif;
+    z-index: 2;
+    max-width: 85%;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.heading .headingImg{
+    width: 500px;
+}
+/* ----------- END SECTION-------------- */
+
+
+/* ----------- Section 2-------------- */
+#section2 {
+}
+#section2 .container{
+    flex-direction: column;
+    min-height: 100px;
+    gap: 70px;
+}
+
+.sectionText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    /* margin: 0 0 70px 0; */
+    max-width: 60%;
+}
+.textHeading{
+    font-family: "Suisse Int'l", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+.textBigHeading{
+    color: var(--blue);
+    font-family: "Suisse Int'l", Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.sectionCards{
+    /* justify-content: space-between; */
+    /* justify-items: center; */
+    /* align-items: center;
+    align-content: center; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 30px;
+    justify-content: center;
+    /* align-items: center; */
+  
+}
+.sectionCards .card{
+    font-family: "Suisse Int'l", Arial, Helvetica, sans-serif;
+    width: 250px;
+    background-color: var(--card1);
+}
+.sectionCards .card img{
+    height: 50px;
+}
+.sectionCards .card p{
+    font-size: .8em;
+}
+.sectionCards .card a{
+    display: flex;
+    align-items: center;
+    gap: 7px; 
+}
+.sectionCards .card a p{
+    color: var(--buttonColor);
+    font-size: .8em;
+    text-decoration: underline;
+    line-height: normal;
+}
+.sectionCards .card a i{
+    color: var(--buttonColor);
+
+    font-size: .8em;
+}
+/* ----------- END SECTION-------------- */
+
+/* ----------- Section 3-------------- */
+#section3{
+    background-color: var(--bg1);
+}
+#section3 .container{
+    flex-direction: column;
+    background-color: var(--blue);
+    color: var(--text2);
+    gap: 30px;
+}
+
+#section3 .textBigHeading{
+    color: var(--text2);
+}
+.sectionCounts{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+.sectionCounts .count{
+    text-align: center;
+    flex: 1;
+    font-family: "Suisse Int'l", Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+}
+.sectionCounts .count h3{
+    font-size: 1.7em;
+}
+/* ----------- END SECTION-------------- */
+
+
+/* ----------- Section 4-------------- */
+
+#section4 .container{
+    flex-direction: column;
+    gap: 30px;
+}
+.sectionImgs{
+    
+    width: inherit;
+    /* display: grid;
+  gap: 2rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-auto-rows: 50px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 50px;
+justify-content: center;
+align-items: center;
+  
+}
+.sectionImgs img{
+    opacity: 50%;
+    height: auto;
+    max-width: 100px;
+    max-height: 60px;
+    /* flex-basis: 70px; */
+    /* flex-basis: 70%; */
+
+    filter: grayscale(100%);
+}
+.sectionImgs p{
+    opacity: 30%;
+    color: #000;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    text-align: center;
+}
+/* ----------- END SECTION-------------- */
+
+/* ----------- Section 5-------------- */
+#section5{
+    background-color: var(--bg1);
+}
+
+#section5 .container{
+    flex-direction: column;
+    gap: 70px;
+}
+#section5 .sectionCards{
+    gap:1rem;
+    
+}
+#section5 .sectionCards .pricing{
+    align-items: stretch;
+    text-align: center;
+    justify-content: flex-start;
+    width: 200px;
+    background-color: var(--card2);
+    gap: 10px;
+}
+.price{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 7px;
+}
+.pricing .price span{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.pricing .price #big{
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 3.3em;
+}
+.pricing .btn{
+    margin: 0;
+}
+.pricing .cardFooter{
+    width: inherit;
+}
+.pricing ul{
+    gap: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* ----------- END SECTION-------------- */
+
+
+/* ----------- Section 6-------------- */
+#section6 .container{
+    font-family: "Suisse Intl Light", Arial, Helvetica, sans-serif;
+    gap: 40px;
+    justify-content: stretch;
+}
+.profSection{
+    padding: 0;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0;
+    /* width: min-content; */
+    /* min-width: 60vw; */
+    max-width: 60vw;
+    background-color: var(--card2);
+    flex-wrap: wrap;
+    /* justify-content: stretch; */
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 30px 25px;
+    align-items: stretch;
+    color: var(--text1);
+    /* justify-content: safe; */
+}
+.profile#kiri{
+    flex-grow: 1;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    background-color: var(--card1);
+    align-items: center;
+    justify-content: center;
+
+}
+.profile header{
+    text-align: center;
+    gap: 20px;
+    /* flex-grow: 0; */
+    width: fit-content;
+    color: var(--text1);
+    align-items: center;
+}
+
+.profile section{
+    flex-grow: 1;
+    gap: 10px;
+    justify-content: space-between;
+}
+.profile #bio{
+    display: flex;
+    /* font-size: 1.5em; */
+}
+.profile #bio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* font-size: 1.5em; */
+}
+.profile #bio p{
+    font-size: 1em;
+}
+.profile #foto{
+    border: solid 3px var(--text1);
+    border-radius: 50%;
+    height: auto;
+    width: 200px;
+    background-color: var(--text1);
+}
+.profile#kanan {
+    /* justify-content: start; */
+    flex-grow: 3;
+    flex-basis: 350px;
+
+    justify-items: stretch;
+}
+.profile#kanan header{
+    margin: auto;
+    max-width: 80%;
+    align-items: stretch;
+}
+.profile#kanan h3{
+    max-width: 80%;
+    text-align: start;
+}
+.profile#kanan h4{
+    text-align: end;
+}
+.profile .cardFooter{
+    width: 100%;
+    flex-direction: row;
+justify-content: center;    
+gap: 30px;
+}
+.profile .cardFooter .sosmed i{
+    font-size: 1.5em;
+    color: var(--text1);
+}
+/* ----------- END SECTION-------------- */
+
+
+/* ----------- FOOTER-------------- */
+footer .container{
+    color: var(--text2);
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+footer p{
+    font-size: .8em;
+    line-height: 2em;
+}
+.footerTop {
+    font-family: "Suisse Intl Light", Arial, Helvetica, sans-serif;
+
+    background-color: var(--blue);
+}
+.footerTop .container{
+    align-items: flex-start;
+    padding: 60px 0;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* height: 200px; */
+}
+.footerItem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.footerTop .footerItem{
+    max-width: 300px;
+}
+.footerItem .heading{
+    font-family: "Suisse Int'l", Arial, Helvetica, sans-serif;
+}
+.footerItem .link{
+    /* width: 100%; */
+    flex-direction: row;
+justify-content: center;   
+align-items: flex-start; 
+gap: 20px;
+}
+.footerItem .link .sosmed{
+    height: 20px;
+    width: 20px;
+    background-color: var(--blueLight);
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerItem .link .sosmed i{
+    /* font-size: 1.5em; */
+    color: var(--text2);
+}
+
+.footerBtm {
+    min-height: 10px;
+    background-color: var(--darkenBlue);
+}
+/* .footerBtm .footerItem{
+    width: 170px;
+    flex-grow: 1;
+    flex-basis: 170px;
+    flex-basis: auto;
+
+}
+.footerBtm .footerItem:last-child{
+    flex-grow: 4;
+    width: fit-content;
+    flex-basis: 344px;
+    flex-basis: auto;
+} */
+.footerBtm a{
+    color: #fff;
+}
+/* .footerBtm .container{
+    align-items: flex-start;
+    padding: 0;
+    height: 70px;
+} */
+
+
+/* ----------- END SECTION-------------- */
+
+/* -------------Responsive----------------- */
+/* 
+1920px
+1440px
+1280px
+Desktop (base)
+991px wide and below
+767px wide and below
+478px wide and below
+
+
+*/
+@media screen and (min-width: 1440px) {
+    
+}
+@media screen and (max-width: 1150px) {
+    body{
+        /* background-color: lawngreen; */
+    }
+    .container{
+       width: 90vw;    
+    }
+    .profSection{
+        max-width: 80vw;
+    }
+}
+@media screen and (max-width: 980px) {
+    body{
+        /* background-color: rgb(4, 0, 252); */
+    }
+    .headingImg{
+        height: 40vw;
+    }
+    .profile#kiri{
+        flex-direction: row;
+     }
+     .profile #foto{
+         width: 100px;
+     }
+
+}
+@media screen and (max-width: 767px) {
+    body{
+        /* background-color: rgb(252, 17, 0); */
+        font-size: .85rem;
+    }
+    .nav{
+        padding: 18px 0;
+    }
+    .heading{
+        min-height: 80vh;
+    }
+    .heading .headingText{
+        max-width: 90vw;
+    }
+    .headingImg{
+        display: none;
+    }
+
+    #section3 .container{
+        width: 100%;
+ 
+     }
+
+
+     .sectionImgs img{
+        height: auto;
+        max-width: 80px;
+        max-height: 40px;
+    }
+     .profSection{
+        max-width: 95vw;
+    }
+    .footerBtm .container{
+        align-items: flex-start;
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 478px) {
+    body{
+        /* background-color: rgb(0, 0, 0); */
+    }
+    .sectionCounts{
+        font-size: .8em;
+        gap: 0;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .nav .menu{
+        display: none;
+    }
+}
