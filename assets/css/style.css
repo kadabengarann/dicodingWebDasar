@@ -140,11 +140,11 @@ nav ul{
     margin-top: 0;
 
 }
-.selected{
+/* .selected{
     color: var(--blue);
     background-color: #666;
 
-}
+} */
 .menu_burger{
     display: none;
     flex-direction: column;
