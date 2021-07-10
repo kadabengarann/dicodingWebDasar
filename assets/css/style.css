@@ -123,7 +123,7 @@ nav ul{
     justify-content: space-between;
     min-height: 0;
     font-weight: 400;
-    padding: 2.4vw 0;
+    padding: 2vw 0;
 
 }
 .nav .menu{
@@ -133,8 +133,13 @@ nav ul{
 
 }
 .logo  {
-    font-size: 1.4em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.35em;
     color: var(--blue);
+    border-radius: 5px;
+    border: 2px solid var(--blue);
+    text-align: center;
+    padding: .15em .8em;
 }
 .navi{
     padding: 10px 20px;
