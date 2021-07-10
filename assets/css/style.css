@@ -278,9 +278,7 @@ a.btn:hover{
     align-items: flex-start;
 }
 .headline{
-    /* font-family: "Suisse Intl Light", Arial, Helvetica, sans-serif; */
-    /* font-family: 'Poppins', sans-serif; */
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
     max-width: 85%;
     font-weight: 300;
     font-size: 3em;
