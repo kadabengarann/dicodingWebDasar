@@ -656,8 +656,9 @@ gap: 20px;
     }
 }
 @media screen and (max-width: 980px) {
-    .headingImg{
-        height: 40vw;
+    .heading .headingImg{
+        height: 30vw;
+        width: auto;
     }
      .profile #foto{
          width: 100px;
